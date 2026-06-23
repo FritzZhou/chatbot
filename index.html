@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Inquiry Assistant</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="avatar-orb">
+                <img src="LCCDO (1).webp" alt="School logo" onerror="this.style.display='none'">
+            </div>
+            <div class="header-text">
+                <h1>School Inquiry Assistant</h1>
+                <div class="header-status">
+                    <span class="status-dot"></span>
+                    <span>Online · replies instantly</span>
+                </div>
+            </div>
+            <button class="header-icon-btn" type="button" aria-label="More options" title="More options">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <circle cx="5" cy="12" r="1.6" fill="currentColor"/>
+                    <circle cx="12" cy="12" r="1.6" fill="currentColor"/>
+                    <circle cx="19" cy="12" r="1.6" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+ 
+        <div class="chat-display" id="chatDisplay">
+        </div>
+ 
+        <div class="quick-topics" id="quickTopics">
+            <button class="topic-chip" data-topic="What are the tuition fees?">Tuition</button>
+            <button class="topic-chip" data-topic="How do I enroll?">Enrollment</button>
+            <button class="topic-chip" data-topic="What is the class schedule?">Schedule</button>
+            <button class="topic-chip" data-topic="Tell me about scholarships">Scholarships</button>
+            <button class="topic-chip" data-topic="How do I contact the school?">Contact</button>
+        </div>
+ 
+        <div class="input-area">
+            <input
+                type="text"
+                id="userInput"
+                class="input-field"
+                placeholder="Message the assistant…"
+                autocomplete="off"
+                aria-label="Type your question"
+            >
+            <button class="send-btn" id="sendBtn" type="button" aria-label="Send message">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12L20 4L13 20L11 13L4 12Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
