@@ -12,6 +12,10 @@ const keywordResponses = {
         keywords: ['tuition', 'fees', 'cost', 'price', 'pay', 'payment'],
         response: 'Tuition fees for this academic year are: Elementary - $5,000, Middle School - $6,500, High School - $8,000. Payment plans and financial aid options are available. Would you like information about payment methods?'
     },
+    persom: {
+        keywords: ['principal'],
+        response: 'Doc. ALexander Suan",
+    },
     schedule: {
         keywords: ['schedule', 'class', 'timetable', 'timing', 'hours', 'time'],
         response: 'School hours are 8:00 AM to 5 PM, Monday through Friday. Classes run in 45-minute periods with a 30-minute lunch break at noon. Special schedules apply on Fridays when early dismissal is at 2:40 PM. Any other scheduling questions?'
